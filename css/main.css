@@ -28,9 +28,9 @@ ul {
     list-style: none;
 }
 .box-shadow {
-    -webkit-box-shadow: 0 0 20px #cfcfcf;
-    -moz-box-shadow: 0 0 20px #cfcfcf;
-    box-shadow: 0 0 20px #b6b5b5;
+    -webkit-box-shadow: 0 0 10px #cfcfcf;
+    -moz-box-shadow: 0 0 10px #cfcfcf;
+    box-shadow: 0 0 10px #b6b5b5;
 }
 .main-header {
     margin: 0 auto 100px auto;
