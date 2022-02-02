@@ -1360,6 +1360,11 @@ ul {
     width: fit-content;
     font-size: 45px;
 }
+@media (max-width: 769px) {
+    .our-awsome {
+        text-align: center;
+    }
+}
 .our-awsome .container {
     display: grid;
     grid-template-columns: repeat(Auto-fill, minmax(250px, 1fr));
