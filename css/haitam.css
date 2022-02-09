@@ -93,6 +93,20 @@ ul {
     border-color: #fff;
     transition-delay: .5s;
 }
+.spikes {
+    position: relative;
+}
+.spikes::after {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(135deg, #fff 25%, transparent 25%), linear-gradient(225deg, #fff 25%, transparent 25%);
+    background-size: 40px;
+    z-index: 2;
+}
 .dots {
     background-image: url('../images/dots.png');
     position: absolute;
