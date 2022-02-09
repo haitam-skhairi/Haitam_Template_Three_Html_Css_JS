@@ -1487,8 +1487,8 @@ ul {
     align-items: center;
     width: 50px;
     height: 50px;
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: 5px;
+    font-size: 22px;
     color: #b9b9b9;
     background-color: #313131;
     transition: var(--main-transition);
@@ -1499,8 +1499,11 @@ ul {
 .footer .social .icons a:hover:nth-child(2) {
     background-color: #1da1f2;
 }
+.footer .social .icons a:hover:nth-child(3) {
+    background-color: #183153;
+}
 .footer .social .icons a:hover:last-child {
-    background-color: #ff0000;
+    background-color: #24292F;
 }
 .footer .social p {
     margin: 20px 0;
