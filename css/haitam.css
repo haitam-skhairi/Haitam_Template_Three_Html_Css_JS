@@ -20,6 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    position: relative;
     font-family: 'Cairo', sans-serif;
 }
 a {
@@ -128,6 +129,16 @@ ul {
     .dots {
         display: none;
     }
+}
+.btn-up {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+    color: var(--main-color);
+    display: none;
 }
 /* End Globales rules */
 
@@ -882,6 +893,7 @@ ul {
     top: 0;
     height: 100%;
     background-color: var(--main-color);
+    transition: 1s;
 }
 /* End Our Skills */
 
