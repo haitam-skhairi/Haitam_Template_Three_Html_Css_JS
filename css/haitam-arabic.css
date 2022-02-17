@@ -20,6 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    direction: rtl;
     position: relative;
     font-family: 'Cairo', sans-serif;
 }
@@ -153,8 +154,7 @@ header {
 header .translate {
     display: flex;
     justify-content: flex-end;
-    margin: 3px 30px 5px 0;
-    
+    margin: 3px 0 5px 30px;
 }
 header .translate .lang {
     width: 30px;
@@ -362,7 +362,7 @@ header .mega-menu .links li a i {
     }
 }
 .landing .landing-text p {
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 23px;
     line-height: 1.7;
     color: #666;
@@ -676,7 +676,7 @@ header .mega-menu .links li a i {
     width: 100px;
     height: 100px;
     position: absolute;
-    right: -10px;
+    left: -10px;
     top: -40px;
     border: 10px solid #EEE;
     border-radius: 50%;
@@ -721,7 +721,7 @@ header .mega-menu .links li a i {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
     border-radius: 10px;
     transition: var(--main-transition);
@@ -767,7 +767,7 @@ header .mega-menu .links li a i {
 }
 .team-members .info {
     padding: 20px;
-    padding-left: 80px;
+    padding-right: 80px;
 }
 .team-members .box .info h3 {
     color: var(--main-color);
@@ -910,7 +910,7 @@ header .mega-menu .links li a i {
 }
 .our-skills .skills .info .the-progress span {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     height: 100%;
     background-color: var(--main-color);
@@ -1236,7 +1236,7 @@ header .mega-menu .links li a i {
     color: var(--main-color);
     font-weight:bolder;
     font-size: 19px;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 .pricing .plan a {
     display: block;
@@ -1554,17 +1554,17 @@ footer .links li a {
 }
 /* footer .links li a::before {  ??? Error ???
     font-family: "Font Awesome 5 Free";
-    content: "\F101";
+    content: "\F100";
     font-weight: 900;
     margin-right: 10px;
     color: var(--main-color);
     } */
 footer .links li a:hover {
-    margin-left: 10px;
+    margin-right: 10px;
     color: #fff;
 }
 footer .links li a i {
-    margin-right: 20px;
+    margin-left: 20px;
     color: var(--main-color);
 }
 footer .adress li {
@@ -1580,7 +1580,7 @@ footer .adress li {
 footer .adress li i {
     font-size: 25px;
     color: var(--main-color);
-    margin-right: 20px;
+    margin-left: 20px;
 }
 @media (max-width: 767px) {
     footer .adress i {
