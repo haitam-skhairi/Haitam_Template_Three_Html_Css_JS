@@ -1041,7 +1041,7 @@ header .mega-menu .links li a i {
     transition: var(--main-transition);
 }
 .our-events .event .info .counter .unit:hover,
-.our-events .event .info .counter .unit span:hover:first-child {
+.our-events .event .info .counter .unit:hover span:first-child {
     border-color: var(--main-color);
 }
 .our-events .event .info .counter .unit span {
@@ -1156,7 +1156,6 @@ header .mega-menu .links li a i {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
     width: 0;
     height: 50%;
     background-color: #f6f6f6;

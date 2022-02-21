@@ -55,47 +55,57 @@ function countUp(element) {
 }
 
 // Event Section Time Counter
-let day = document.querySelector(".our-events .counter .unit .day");
-let hour = document.querySelector(".our-events .counter .unit .hour");
-let minute = document.querySelector(".our-events .counter .unit .minute");
-let second = document.querySelector(".our-events .counter .unit .second");
 
-function dayDown(eleDay) {
-  let counterdays = setInterval(() => {
-    eleDay.textContent--;
-    if (eleDay.textContent == "0") {
-      clearInterval(counterdays);
-    }
-  }, 86_400_000);
-}
-dayDown(day);
+let counter = setInterval(() => {
+  let eventTime = new Date("aug 31, 2022 23:59:59").getTime();
+  let timeNow = new Date().getTime();
+  let timediff = eventTime - timeNow;
 
-function hourDown(eleHour) {
-  setInterval(() => {
-    eleHour.textContent--;
-    if (eleHour.textContent == "0") {
-      eleHour.textContent = 24;
-    }
-  }, 3_600_000);
-}
-hourDown(hour);
+  let days = Math.floor(timediff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((timediff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((timediff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((timediff % (1000 * 60)) / 1000);
 
-function minuteDown(eleMunite) {
-  setInterval(() => {
-    eleMunite.textContent--;
-    if (eleMunite.textContent == "0") {
-      eleMunite.textContent = 60;
-    }
-  }, 60_000);
-}
-minuteDown(minute);
+  document.querySelector(".our-events .days").innerHTML =
+    days < 10 ? `0${days}` : days;
+  document.querySelector(".our-events .hours").innerHTML =
+    hours < 10 ? `0${hours}` : hours;
+  document.querySelector(".our-events .minutes").innerHTML =
+    minutes < 10 ? `0${minutes}` : minutes;
+  document.querySelector(".our-events .seconds").innerHTML =
+    seconds < 10 ? `0${seconds}` : seconds;
 
-function secondDown(eleSecond) {
-  setInterval(() => {
-    eleSecond.textContent--;
-    if (eleSecond.textContent == "0") {
-      eleSecond.textContent = 60;
-    }
-  }, 1000);
-}
-secondDown(second);
+  if (timediff < 0) {
+    clearInterval(counter);
+  }
+}, 1000);
+
+// function minuteDown(eleMunite) {
+//   setInterval(() => {
+//     eleMunite.textContent--;
+//     if (eleMunite.textContent == "0") {
+//       eleMunite.textContent = 60;
+//     }
+//   }, 60_000);
+// }
+// minuteDown(minute);
+
+// function hourDown(eleHour) {
+//   setInterval(() => {
+//     eleHour.textContent--;
+//     if (eleHour.textContent == "0") {
+//       eleHour.textContent = 24;
+//     }
+//   }, 3_600_000);
+// }
+// hourDown(hour);
+
+// function dayDown(eleDay) {
+//   let counterdays = setInterval(() => {
+//     eleDay.textContent--;
+//     if (eleDay.textContent == "0") {
+//       clearInterval(counterdays);
+//     }
+//   }, 86_400_000);
+// }
+// dayDown(day);
