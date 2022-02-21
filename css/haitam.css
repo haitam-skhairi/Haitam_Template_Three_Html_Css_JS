@@ -1558,13 +1558,13 @@ footer .links li a {
     padding: 15px 0;
     transition: var(--main-transition);
 }
-footer .links li a::before {
+/* footer .links li a::before { Error ???
     font-family: "Font Awesome 5 Free";
     content: "\f101";
     font-weight: 900;
     margin-right: 10px;
     color: var(--main-color);
-}
+} */
 footer .links li a:hover {
     margin-left: 10px;
     color: #fff;
