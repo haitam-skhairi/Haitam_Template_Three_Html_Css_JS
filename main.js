@@ -1,11 +1,14 @@
-// Button Scroll To top
+// Button Scroll To top & Header Section
 let bntUp = document.querySelector(".btn-up");
+let header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 600) {
+  if (window.scrollY >= 700) {
     bntUp.style.display = "block";
+    header.style.backgroundColor = "rgb(255 255 255 / 80%)";
   } else {
     bntUp.style.display = "none";
+    header.style.backgroundColor = "rgb(255 255 255 / 100%)";
   }
 });
 
@@ -54,7 +57,7 @@ function countUp(element) {
   }, 2000 / goal);
 }
 
-// Event Section Time Counter
+// Event Section | Time Counter
 
 let counter = setInterval(() => {
   let eventTime = new Date("aug 31, 2022 23:59:59").getTime();
@@ -80,32 +83,18 @@ let counter = setInterval(() => {
   }
 }, 1000);
 
-// function minuteDown(eleMunite) {
-//   setInterval(() => {
-//     eleMunite.textContent--;
-//     if (eleMunite.textContent == "0") {
-//       eleMunite.textContent = 60;
-//     }
-//   }, 60_000);
-// }
-// minuteDown(minute);
+// Discount Section | Filling Inputs
 
-// function hourDown(eleHour) {
-//   setInterval(() => {
-//     eleHour.textContent--;
-//     if (eleHour.textContent == "0") {
-//       eleHour.textContent = 24;
-//     }
-//   }, 3_600_000);
-// }
-// hourDown(hour);
+let input1 = document.querySelector(".discount .form form .one");
+let progress1 = document.querySelector(".discount .form form .progress-1");
+let maxlength1 = input1.getAttribute("maxlength");
+input1.addEventListener("input", () => {
+  progress1.style.width = `${(input1.value.length / maxlength1) * 100}%`;
+});
 
-// function dayDown(eleDay) {
-//   let counterdays = setInterval(() => {
-//     eleDay.textContent--;
-//     if (eleDay.textContent == "0") {
-//       clearInterval(counterdays);
-//     }
-//   }, 86_400_000);
-// }
-// dayDown(day);
+let textarea = document.querySelector(".discount .form form .textarea");
+let progress2 = document.querySelector(".discount .form form .progress-2");
+let maxlength2 = textarea.getAttribute("maxlength");
+textarea.addEventListener("input", () => {
+  progress2.style.width = `${(textarea.value.length / maxlength2) * 100}%`;
+});

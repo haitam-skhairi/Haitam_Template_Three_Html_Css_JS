@@ -869,10 +869,13 @@
         <div class="form">
             <h2>طلب خصم</h2>
             <form action="">
-                <input class="input" type="text" placeholder="اسمك" name="name">
-                <input class="input" type="email" placeholder="بريدك الالكتروني" name="email">
+                <input class="input one" type="text" maxlength="25" placeholder="اسمك" name="name">
+                <span class="prog progress-1"></span>
+                <input class="input" type="email" maxlength="30" placeholder="بريدك الالكتروني" name="email">
                 <input class="input" type="number" placeholder="هاتفك" name="phone">
-                <textarea class="input" name="message" placeholder="أخبرنا عن احتياجاتك"></textarea>
+                <textarea class="input textarea" name="message" maxlength="150"
+                    placeholder="أخبرنا عن احتياجاتك"></textarea>
+                <span class="prog progress-2"></span>
                 <input type="submit" value="إرسال">
             </form>
         </div>

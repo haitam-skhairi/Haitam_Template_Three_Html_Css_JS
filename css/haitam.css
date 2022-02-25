@@ -138,6 +138,7 @@ ul {
     background-color: transparent;
     z-index: 100;
     color: var(--main-color);
+    cursor: pointer;
     display: none;
 }
 /* End Globales rules */
@@ -146,7 +147,7 @@ ul {
 header {
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(255 255 255 / 100%);
     box-shadow: 0px 3px 12px rgb(0 0 0 / 10%);
     z-index: 99;
 }
@@ -1475,6 +1476,14 @@ header .mega-menu .links li a i {
     border: none;
     border-bottom: 1px solid #ccc;
     caret-color: var(--main-color);
+}
+.discount .form form .prog {
+    display: block;
+    width: 0;
+    height: 1px;
+    position: relative;
+    top: -26px;
+    background-color: var(--main-color);
 }
 .discount .form form .input:focus {
     outline: none;

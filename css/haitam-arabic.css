@@ -1476,6 +1476,14 @@ header .mega-menu .links li a i {
     border-bottom: 1px solid #ccc;
     caret-color: var(--main-color);
 }
+.discount .form form .prog {
+    display: block;
+    width: 0;
+    height: 1px;
+    position: relative;
+    top: -26px;
+    background-color: var(--main-color);
+}
 .discount .form form .input:focus {
     outline: none;
 }
