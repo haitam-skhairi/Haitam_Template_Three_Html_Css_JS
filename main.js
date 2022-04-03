@@ -1,14 +1,11 @@
 // Button Scroll To top & Header Section
 let bntUp = document.querySelector(".btn-up");
-let header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 700) {
     bntUp.style.display = "block";
-    header.style.backgroundColor = "rgb(255 255 255 / 80%)";
   } else {
     bntUp.style.display = "none";
-    header.style.backgroundColor = "rgb(255 255 255 / 100%)";
   }
 });
 
