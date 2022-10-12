@@ -57,7 +57,7 @@ function countUp(element) {
 // Event Section | Time Counter
 
 let counter = setInterval(() => {
-  let eventTime = new Date("aug 31, 2022 23:59:59").getTime();
+  let eventTime = new Date("dec 31, 2022 23:59:59").getTime();
   let timeNow = new Date().getTime();
   let timediff = eventTime - timeNow;
 

@@ -164,26 +164,31 @@ header {
     box-shadow: 0px 3px 12px rgb(0 0 0 / 10%);
     z-index: 99;
 }
-header .translate {
+
+.translate {
     display: flex;
     justify-content: flex-end;
-    margin: 3px 30px 5px 0;
-    
+    padding: 2px 100px;
+    background-color: #000;
 }
-header .translate .lang {
+.translate .lang {
     width: 30px;
     height: 20px;
     margin-left: 5px;
     cursor: pointer;
 }
 @media (max-width: 767px) {
-    header .translate .lang {
+    .translate {
+        padding: 1px 50px;
+
+    }
+    .translate .lang {
         width: 20px;
         height: 15px;
         margin-left: 3px;
     }
 }
-header .translate .lang img {
+.translate .lang img {
     width: 100%;
     height: 100%;
 }
@@ -265,6 +270,7 @@ header .container nav > div > a:hover {
     color: var(--main-color-alt);
     background-color: #fafafa;
 }
+
 /* Start Mega Menu */
 header .mega-menu {
     position: absolute;
