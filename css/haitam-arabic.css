@@ -25,7 +25,7 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 body::-webkit-scrollbar {
-    width:15px;
+    width:10px;
 }
 body::-webkit-scrollbar-track {
     background-color: #f6f6f6;
@@ -158,32 +158,37 @@ ul {
 
 /* Start header*/
 header {
-    position: fixed;
+    position: relative;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0px 3px 12px rgb(0 0 0 / 10%);
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 99;
 }
-header .translate {
+
+.translate {
     display: flex;
     justify-content: flex-end;
-    margin: 3px 0 5px 30px;
+    padding: 2px 100px;
+    background-color: #ffffff;
 }
-header .translate .lang {
+.translate .lang {
     width: 30px;
     height: 20px;
     margin-left: 5px;
-    border-radius: 50%;
     cursor: pointer;
 }
 @media (max-width: 767px) {
-    header .translate .lang {
+    .translate {
+        padding: 1px 50px;
+
+    }
+    .translate .lang {
         width: 20px;
         height: 15px;
         margin-left: 3px;
     }
 }
-header .translate .lang img {
+.translate .lang img {
     width: 100%;
     height: 100%;
 }
