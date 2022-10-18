@@ -1,4 +1,4 @@
-# Haitam_Template_Three_Html_Css_JS
+# Landing-web-template
 This Template created with CSS and HTML <br>
 CSS : Grid - Flex - Media Query - Variables - Responsive Design ...
 ## Demo
