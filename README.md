@@ -1,7 +1,7 @@
 # I will build responsive html landing pages or one page website
-Hi, do you need a html landing page designer to design your one page website? Then you are at the right place to design your landing page. I have 2 years of experience in web design and development as well as landing page or one page website or  bootstrap responsive landing page design. <br/>
+Hi, do you need an HTML landing page designer to design your one-page website? Then you are at the right place to design your landing page. I have three years of experience in web design and development as well as a landing page or one-page website or bootstrap responsive landing page design.
 
-I can create amazing html landing page for your portfolio, business, corporate or agency using bootstrap. By using one page website you can present your business or agency or your educational sites. 
+I can create a fantastic HTML landing page for your portfolio, business, corporate, or agency using bootstrap. By using a one-page website you can present your company or agency or your educational sites.
 
 ## What are you getting from this gig?
 Well commented and documented code <br/>
