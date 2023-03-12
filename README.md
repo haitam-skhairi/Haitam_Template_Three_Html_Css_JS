@@ -4,16 +4,18 @@ Hi, do you need an HTML landing page designer to design your one-page website? T
 I can create a fantastic HTML landing page for your portfolio, business, corporate, or agency using bootstrap. By using a one-page website you can present your company or agency or your educational sites.
 
 ## What are you getting from this gig?
-Well commented and documented code <br/>
-CSS animation <br/>
-Latest bootstrap version <br/>
-responsive mobile friendly code and design <br/>
-Jq effects also Scrolling effects <br/>
-Own Handed Code <br/>
-bootstrap responsive Pixel Perfect Design <br/>
-Cross-browser compatibility <br/>
-SEO optimized code <br/>
-Semantic Markup
+
+What are you getting from my job?
+- Well-commented and documented code.
+- CSS animation.
+- Latest bootstrap version.
+- Responsive mobile-friendly code and design.
+- JS effects also Scrolling effects.
+- Own-Handed Code.
+- Bootstrap responsive Pixel Perfect Design.
+- Cross-browser compatibility.
+- SEO-optimized code.
+- Semantic Markup.
 
 ## Demo
 https://haitam-skhairi.github.io/landing-web-template/
